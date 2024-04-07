@@ -16,6 +16,10 @@ func main() {
 	if err != nil {
 		os.Mkdir(dirPath, os.ModePerm)
 		log.Println("Создана папка /logs, поместите в нее архивы с логами")
+		var input string
+		log.Println("Нажмите Enter, чтобы завершить работу")
+		fmt.Scanln(&input)
+
 		return
 	}
 
